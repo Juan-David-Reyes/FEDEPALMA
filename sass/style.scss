@@ -37,6 +37,9 @@
     --fondo-s2:#FAFAFA;
     --fondo-s3:#303B27;
 
+    // FUENTES
+    --font-raleway:font-family: 'Raleway', sans-serif;;
+    --font-quicksand:font-family: 'Quicksand', sans-serif;;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -113,9 +116,18 @@ header{
                 overflow-x: scroll;
                 overflow-y: hidden;
                 width: 100%;
-                gap: 20px;
-                font-size: 14px;
+                gap: 40px;
                 white-space: nowrap;
+                .indicador{
+                    font-size: 12px;
+                    font-family: var(--font-raleway);
+                    display: flex;
+                    font-weight: 400;
+                    gap: 10px;
+                    .dato_indicador{
+                        font-weight: 700;
+                    }
+                }
                 &::-webkit-scrollbar{
                     display: none;
                 }
@@ -146,9 +158,65 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        h1{
+            margin: 10px;
+        }
         .navbar{
             display: flex;
+            align-items: center;
             gap: 20px;
+            .btn_afiliados{
+                background: var(--bg_btn-1);
+                padding: 8px 12px;
+                box-sizing: border-box;
+                border-radius: 100px;
+                color: var(--txt-titulo-blanco);
+                font-weight: 700;
+                height: max-content;
+            }
+            nav{
+                a{
+                    font-weight: 700;
+                    font-family: var(--font-quicksand);
+                    color: var(--verde-oscuro);
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+.cont_input_search{
+    background:#ECECEC;
+    border-radius: 100px;
+    padding: 4px 4px 4px 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    input[type=search]{
+        appearance: none;
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+        color: #282828;
+        font-size: 15px;
+    }
+    button[type=submit]{
+        appearance:none;
+        border: 0;
+        background-color: transparent;
+        padding-left: 10px;
+        cursor: pointer;
+        border-radius: 100px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 300ms ease;
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.068);
         }
     }
 }
