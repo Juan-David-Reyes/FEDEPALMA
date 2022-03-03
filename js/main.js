@@ -37,6 +37,7 @@ $(document).ready(function(){
 
     homeHeroSlider();
     homeSliderServiciosG();
+    swiperNoticiasDest();
     homeSliderPalmicultores();
 
 })
@@ -50,7 +51,7 @@ function homeHeroSlider(){
         },
         pagination: {
             clickable: true,
-            el: ".swiper-pagination",
+            el: ".swiperHero .swiper-pagination",
         },
     });
 }
@@ -60,11 +61,11 @@ function homeSliderServiciosG(){
         slidesPerView: 1,
         spaceBetween: 10,
         pagination: {
-            el: ".swiper-pagination",
+            el: ".sliderServiciosG .swiper-pagination",
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.slider_s_gremiales .swiper-button-next',
+            prevEl: '.slider_s_gremiales .swiper-button-prev',
         },
         breakpoints: {
             // when window width is >= 320px
@@ -91,12 +92,45 @@ function homeSliderServiciosG(){
     });
 }
 
+function swiperNoticiasDest(){
+    let swiper = new Swiper(".swiperNoticias", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.cont_gen_noticias_d .swiper-button-next',
+            prevEl: '.cont_gen_noticias_d .swiper-button-prev',
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            380: {
+              slidesPerView: 1,
+              spaceBetween: 30
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 30
+            },
+            // when window width is >= 640px
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 10
+            },
+            940: {
+                slidesPerView: 3,
+                spaceBetween: 10
+              }
+            
+        }
+    });
+}
+
 function homeSliderPalmicultores(){
     let swiper = new Swiper(".sliderPalmicultores", {
         slidesPerView: 1,
         spaceBetween: 50,
         pagination: {
-            el: ".swiper-pagination",
+            el: ".sliderPalmicultores .swiper-pagination",
         },
     });
 }
