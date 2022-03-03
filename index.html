@@ -11,12 +11,9 @@
             href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
             rel="stylesheet"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@700;900&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="plugins/swiperjs/swiper-bundle.min.css">
         <link rel="stylesheet" href="css/style.min.css" />
@@ -39,6 +36,20 @@
                 <span class="fab fa-youtube"></span>
             </a>
         </div>
+
+        <div class="atajos_side">
+            <a class="btn_atajo">atajos</a>
+            <nav class="cont_atajos">
+                <ul>
+                    <li> <a class="btn_f1" href="">web Internacional</a> </li>
+                    <li> <a class="btn_f2" href="">La Palma es vida</a> </li>
+                    <li> <a class="btn_f3" href="">Junta Directiva</a> </li>
+                    <li> <a class="btn_f4" href="">CID Palmero</a> </li>
+                    <li> <a class="btn_f5" href="">SISPA</a> </li>
+                </ul>
+            </nav>
+        </div>
+
         <header>
             <div class="subheader">
                 <div class="center">
@@ -138,25 +149,48 @@
                 <div class="black_screen"></div>
                 <nav class="nav_main">
                     <header class="header_nav">
-                        <picture>
-                            <img src="" alt="" />
-                        </picture>
+                        <a href="index.html">
+                            <img src="images/logo_fedepalma.svg" width="152" height="51" alt="" />
+                        </a>
                         <a class="close_btn">
                             <span class="fas fa-times"></span> menu
                         </a>
+
                     </header>
+                    <div class="cont_movile">
+                        <a class="btn_afiliados_movile" href="">Afiliados
+                            <span class="fas fa-users"></span>
+                        </a>
+                        <div class="cont_input_search">
+                            <input type="search" placeholder="Buscar..." />
+                            <button type="submit">
+                                <span class="fas fa-search"></span>
+                            </button>
+                        </div>
+                    </div>
                     <ul>
                         <li>
-                            <a href="">Federación</a>
+                            <a class="link_m_pri ">Federación</a>
                         </li>
                         <li>
-                            <a href="">Federación</a>
+                            <a class="link_m_pri ">Servicios gremiales</a>
                         </li>
                         <li>
-                            <a href="">Federación</a>
+                            <a class="link_m_pri active">Registro y afiliación</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a class="link_m_sec">Registro nacional de palmicultores</a>
+                                </li>
+                                <li>
+                                    <a class="link_m_sec">Afiliaciones</a>
+                                </li>
+                                <li>
+                                    <a class="link_m_sec">certificaciones</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="">Federación</a>
+                            <a class="link_m_pri ">Sostenibilidad</a>
                         </li>
                     </ul>
                 </nav>
@@ -165,267 +199,287 @@
 
         <main>
             <div class="spacer"></div>
-            <div class="center">
-                <div class="hero_section">
-                    <!-- Swiper -->
-                    <div class="swiper swiperHero">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">Slide 1</div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
-                            <div class="swiper-slide">Slide 4</div>
+            <section class="hero_section">
+                <!-- Swiper -->
+                <div class="swiper swiperHero">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <img width="1441" height="600" src="images/01-home/image_slider.jpg" alt="">
+                            </picture>
+                            <div class="content_slide_hero" data-swiper-parallax="-400">
+                                <h2 data-swiper-parallax="-200" >XVII Reunión Técnica Nacional</h2>
+                                <h4 data-swiper-parallax="-300">¡Las inscripciones están abiertas!</h4>
+                                <summary data-swiper-parallax="-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus sed dignissim elementum lectus. Leo facilisis nisl non at nisi, sit sit nibh ut. </summary>
+                                <a data-swiper-parallax-scale="0.15" href="" class="btn_pri_redondo">ENCUENTRO VIRTUAL <span class="fas fa-chevron-right"></span> </a>
+                            </div>
                         </div>
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <img width="1441" height="600" src="images/01-home/image_slider2.jpg" alt="">
+                            </picture>
+                            <div class="content_slide_hero" data-swiper-parallax="-400">
+                                <h2 data-swiper-parallax="-200" >XVII Reunión Técnica Nacional</h2>
+                                <h4 data-swiper-parallax="-300">¡Las inscripciones están abiertas!</h4>
+                                <summary data-swiper-parallax="-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus sed dignissim elementum lectus. Leo facilisis nisl non at nisi, sit sit nibh ut. </summary>
+                                <a data-swiper-parallax-scale="0.15" href="" class="btn_pri_redondo">ENCUENTRO VIRTUAL <span class="fas fa-chevron-right"></span> </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <img width="1441" height="600" src="images/01-home/image_slider.jpg" alt="">
+                            </picture>
+                            <div class="content_slide_hero" data-swiper-parallax="-400">
+                                <h2 data-swiper-parallax="-200" >XVII Reunión Técnica Nacional</h2>
+                                <h4 data-swiper-parallax="-300">¡Las inscripciones están abiertas!</h4>
+                                <summary data-swiper-parallax="-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus sed dignissim elementum lectus. Leo facilisis nisl non at nisi, sit sit nibh ut. </summary>
+                                <a data-swiper-parallax-scale="0.15" href="" class="btn_pri_redondo">ENCUENTRO VIRTUAL <span class="fas fa-chevron-right"></span> </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <img width="1441" height="600" src="images/01-home/image_slider2.jpg" alt="">
+                            </picture>
+                            <div class="content_slide_hero" data-swiper-parallax="-400">
+                                <h2 data-swiper-parallax="-200" >XVII Reunión Técnica Nacional</h2>
+                                <h4 data-swiper-parallax="-300">¡Las inscripciones están abiertas!</h4>
+                                <summary data-swiper-parallax="-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus sed dignissim elementum lectus. Leo facilisis nisl non at nisi, sit sit nibh ut. </summary>
+                                <a data-swiper-parallax-scale="0.15" href="" class="btn_pri_redondo">ENCUENTRO VIRTUAL <span class="fas fa-chevron-right"></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <section class="section_quiene_s">
+                <div class="center">
+                    <div class="cont_quienes_s">
+                        <picture>
+                            <img width="164" height="129" src="images/01-home/img_quienes_s.jpg">
+                        </picture>
+                        <div class="c_quienes_s_desc">
+                            <h3>quiénes somos</h3>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus sed dignissim elementum lectus. Leo facilisis nisl non at nisi, sit sit nibh ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus sed dignissim elementum lectus. Leo facilisis nisl non at nisi, <a href=""> conoce más aquí. </a></div>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                recusandae iure perferendis, qui beatae commodi accusamus eius
-                sapiente velit dolore voluptatum laboriosam totam dolorum
-                quaerat quae deserunt. Dolorem natus ipsa ut, earum molestias
-                qui nam. Laudantium nesciunt enim natus vitae blanditiis, eius
-                tempore odit. Quas autem dolores nulla dignissimos libero non
-                eligendi minima fugiat similique, fugit sequi! Mollitia unde
-                quas ea dignissimos necessitatibus omnis, cupiditate rem beatae
-                optio at. Nisi asperiores voluptatum illum eius nam ratione
-                iusto, sit odit, voluptas possimus reprehenderit aspernatur hic
-                suscipit exercitationem quidem sunt vel? Perspiciatis cum,
-                voluptate impedit earum voluptas, iure distinctio ea sapiente
-                non inventore eum fuga. Error, molestiae! Impedit iure atque nam
-                non fugit harum neque saepe pariatur at, corrupti facere
-                accusantium quaerat facilis veniam quam mollitia sapiente!
-                Distinctio commodi non mollitia magni, suscipit inventore totam
-                dolore minima necessitatibus voluptatum, corporis eaque beatae
-                quis a? Quas vel non consequatur autem dolore sint dolor nobis
-                provident, magnam ab quae tenetur repellendus eum cum fuga
-                consectetur reprehenderit iusto tempore omnis quia ipsam ipsum.
-                Qui laudantium quaerat commodi quas molestiae obcaecati minima
-                enim iure totam, corrupti tempora. Eius, ab! Officiis magni,
-                alias corporis, omnis voluptas reiciendis eius quisquam
-                necessitatibus sequi itaque blanditiis odit iste ad, nam aliquam
-                optio nemo eligendi aperiam adipisci natus animi! Repellendus
-                doloribus quisquam error veritatis illum corporis deserunt,
-                saepe nostrum debitis nobis perferendis molestiae ex nam iusto
-                voluptas velit architecto distinctio illo neque! Aut repellat
-                quibusdam eius non amet esse repellendus, alias minima dolor
-                similique voluptatum eaque, nesciunt assumenda distinctio!
-                Repellat sed non magnam laboriosam error, iste ad id illum
-                eligendi quam accusamus? Quisquam nobis eos facilis distinctio
-                reiciendis, libero, magnam tempora ea hic accusamus alias
-                temporibus esse enim suscipit consectetur placeat tempore
-                dolorem quae perferendis labore sequi vero? Possimus aut
-                excepturi quod accusamus, ducimus, cum repellendus id
-                consectetur optio et dolor impedit ullam, dolore odit a.
-                Cupiditate debitis labore assumenda id nisi nobis. Vero
-                blanditiis quae cupiditate magnam consectetur quam atque.
-                Mollitia, beatae expedita. Odit sunt cum deserunt obcaecati
-                ducimus, dolorem eum itaque autem. Aspernatur, optio nisi
-                praesentium, amet rem esse ad, autem nihil repellendus veritatis
-                porro quia cum explicabo ab labore rerum fugit atque repudiandae
-                aliquid exercitationem facere? Tempora laudantium dolore libero
-                temporibus numquam dicta quasi impedit earum voluptas hic
-                cumque, qui nisi! Delectus perspiciatis animi doloremque
-                repudiandae excepturi. Accusantium, porro aspernatur minus
-                similique blanditiis nostrum, omnis, error est iusto amet itaque
-                quaerat adipisci quam tempora. Quod minus esse temporibus
-                accusamus dolore labore non, molestias facilis impedit incidunt
-                explicabo repudiandae ducimus doloremque corrupti, eum
-                reiciendis vero. Qui ducimus nisi numquam, voluptatem commodi
-                illum ipsam maiores nulla, voluptate dignissimos sint tenetur,
-                optio autem doloremque minima quaerat nihil similique quas quo
-                consequatur dicta quos unde pariatur ullam. Consequuntur iusto
-                nostrum, expedita sint corrupti quod, aperiam corporis ab saepe
-                ad debitis soluta. Dolorem totam esse quaerat harum explicabo
-                corrupti? Unde, ducimus minus atque quis odit id omnis nemo
-                saepe ad quidem. Aut voluptatibus nam iusto, praesentium dolorem
-                tempora quis a, nihil architecto debitis reiciendis quos nulla
-                expedita obcaecati totam asperiores autem. Voluptatum fugiat
-                labore libero. Aut assumenda, laboriosam earum eligendi
-                consequuntur quaerat quod dicta! Repellendus quos impedit
-                tempora ullam soluta reiciendis eveniet voluptas voluptates
-                aspernatur aliquid magni minus expedita officiis, optio alias
-                beatae ea, incidunt mollitia! Perferendis ea a quod animi
-                cupiditate quibusdam reiciendis ullam nostrum, mollitia qui sit
-                veniam ipsum? Possimus, sed nam! Mollitia error labore dolorum
-                doloribus incidunt! Esse veniam non atque doloremque, provident
-                voluptas cum consequuntur sit. Doloribus sit eius eveniet, vitae
-                id aperiam nesciunt rerum cum non hic, voluptas fugiat dicta
-                dolorem deserunt magni ab libero illo delectus voluptate. Ab eum
-                eligendi, sequi necessitatibus blanditiis accusantium pariatur
-                autem qui cupiditate rerum. Hic officia velit ratione minima
-                blanditiis in officiis id corporis! Officia illo ipsam eligendi
-                quos inventore nemo ab et suscipit reiciendis qui eaque quae
-                quam odit at, perferendis cupiditate impedit veritatis obcaecati
-                dolores sed. Magnam, excepturi dolore nostrum doloribus earum
-                voluptatum animi expedita, harum nesciunt incidunt dolores
-                debitis soluta deserunt esse ullam amet aliquid ipsum tempora
-                facere perspiciatis. Repudiandae recusandae reiciendis modi iure
-                eligendi id quia temporibus voluptas impedit, voluptatibus
-                possimus quos quidem ipsam sunt natus libero corrupti totam
-                officiis ipsum adipisci, at architecto voluptatem nam placeat!
-                Odio deleniti explicabo quae repellat excepturi saepe quasi,
-                earum perferendis quod tempore dolore quisquam distinctio
-                corrupti eligendi at delectus vero velit aperiam sed? Autem,
-                quaerat hic quibusdam provident aliquam aliquid animi explicabo
-                corrupti excepturi odio. Velit provident magnam voluptatibus,
-                quia eius dolorem harum. Voluptatibus consequatur laboriosam
-                maxime repellendus consectetur ipsam veniam, fugit quam amet
-                iure deserunt esse sint eaque natus hic sunt rem iste excepturi,
-                voluptas laudantium sequi inventore explicabo voluptatum itaque.
-                Quasi deleniti dolorem magnam dicta autem hic ut consequatur
-                suscipit omnis rem, nihil eveniet, accusantium nulla cum?
-                Asperiores nihil quisquam fugit quaerat dolorem at eum non et
-                quasi, expedita ut corporis ipsam velit laborum commodi
-                dignissimos atque est incidunt. Quam nam quisquam aliquam culpa,
-                dolorum blanditiis suscipit expedita recusandae, asperiores
-                mollitia voluptatum officia, a alias deleniti? Sit eaque,
-                mollitia ipsa consectetur facere, voluptates, dignissimos ab
-                corporis repellendus eveniet inventore reprehenderit error
-                beatae veniam numquam. Iusto tempore nobis facilis iure incidunt
-                numquam cupiditate! Quidem accusantium quam eligendi.
-                Accusantium ratione fugit ut magnam numquam consequatur, maxime
-                culpa, necessitatibus velit dolores rem dolorum commodi
-                laudantium corrupti minus obcaecati est quae iste voluptates et.
-                Enim minus facere perspiciatis ex molestiae laboriosam,
-                distinctio magnam voluptas aliquam dicta ipsa libero assumenda,
-                nobis quos cumque ut quod ipsum adipisci cum! Temporibus est
-                neque corporis hic modi. Cumque iure dignissimos esse natus
-                beatae, quisquam atque veritatis consequatur fugit incidunt,
-                sapiente id expedita modi! Dolores id accusamus facilis
-                praesentium, iste atque quibusdam provident tempora quos
-                cupiditate aliquid unde odit, perferendis expedita laudantium
-                eius ullam? Dolor, mollitia voluptate distinctio libero
-                blanditiis iste facilis, nulla culpa esse, cum voluptatem.
-                Laborum quaerat similique quisquam maiores possimus officia,
-                labore ipsa ullam, dolores aliquam consequatur harum inventore
-                non! Soluta quas asperiores assumenda rem incidunt reprehenderit
-                quisquam? Eaque quia consectetur cum. Est necessitatibus minus
-                consequatur laborum fuga tenetur rem sequi nemo quos hic odio
-                adipisci eligendi quae, aliquam corporis dolores aliquid
-                incidunt explicabo, molestias, laudantium unde perferendis odit.
-                Repellendus modi dolorum tempora unde inventore eaque
-                asperiores? Maiores nisi dolore quia porro explicabo, ipsum
-                earum eaque ratione consectetur laboriosam! Amet rerum velit
-                deleniti quis corporis quia quidem dolores iste harum modi
-                excepturi, sequi magnam sit aperiam soluta deserunt explicabo
-                animi perspiciatis atque natus unde quae! Quam sed rerum itaque
-                obcaecati eligendi asperiores earum numquam consequatur, eaque
-                illum sit vel saepe culpa voluptates ipsum laboriosam! Tenetur
-                minima voluptatibus aliquam a reprehenderit est ad dolorum
-                voluptates eum inventore? Alias doloribus animi dignissimos
-                delectus culpa in illum eligendi voluptas nostrum natus labore
-                illo quasi reprehenderit facere repellendus ducimus enim, unde
-                ipsum, corrupti vitae voluptatum non? Similique, quis sit quo
-                praesentium rem ex laborum porro et quibusdam unde vel
-                architecto voluptas eos obcaecati dolorem quidem maiores
-                molestias repellendus in quas sequi tempora ratione odit
-                temporibus! Nam, neque vitae aspernatur fugit quos molestiae
-                laboriosam debitis error dicta doloremque soluta nisi? Repellat
-                veniam architecto inventore quis laudantium ullam ipsum beatae,
-                maxime nisi optio dolorum in? Tempore, saepe. Vero quasi amet
-                ipsa quam praesentium, harum fugit et explicabo nostrum error.
-                Fugiat tempora unde non doloribus ad laboriosam, laborum sunt
-                nam esse! Rem quisquam eligendi velit odit assumenda. Laborum,
-                possimus. Culpa, quis ex facilis provident at quisquam! Incidunt
-                sint voluptatibus necessitatibus dolor ipsam quae fugit
-                exercitationem qui sequi deleniti. Molestiae perspiciatis a
-                animi aperiam at atque. Vero officiis aut quam eos, cupiditate
-                nemo labore laudantium aperiam eaque corrupti autem amet dolor
-                nobis expedita illum quo possimus optio voluptatibus deleniti
-                corporis nulla repudiandae tempore hic. Nihil quam fugit vitae
-                natus repudiandae dignissimos temporibus ad reprehenderit
-                consequuntur fuga, illum reiciendis voluptatibus earum corrupti
-                voluptates necessitatibus eaque ipsum quos hic alias tenetur nam
-                fugiat. Veritatis, provident? Incidunt vitae, mollitia iusto
-                repellat aspernatur commodi voluptatum autem nobis, dolores
-                voluptate neque quam ipsa excepturi perferendis sunt in. Libero
-                enim sequi, ab, expedita, blanditiis eius quam aut harum
-                sapiente repellat voluptatibus nulla sunt? Impedit possimus
-                nihil sunt dolorem velit repellendus repellat, excepturi itaque
-                magni non iste minima fuga rerum omnis, atque vel consequuntur
-                necessitatibus! Molestias ipsam velit possimus quae ratione ex
-                animi, soluta, sunt assumenda inventore temporibus doloribus nam
-                maiores. Esse, impedit vel. Voluptates cum tenetur veritatis est
-                vel explicabo rerum voluptate nobis, ea consequuntur! Voluptates
-                odio hic, culpa voluptatem expedita, necessitatibus quae, enim
-                blanditiis beatae optio minus laborum. Cupiditate placeat itaque
-                animi ea a molestias blanditiis dicta, possimus fuga? Blanditiis
-                explicabo, officia libero sapiente cumque repellat? Accusamus,
-                quo laboriosam. Enim provident excepturi vitae! Nemo,
-                repudiandae doloremque deleniti fuga voluptate eius. Voluptatum,
-                magni! Dolor et commodi voluptates nihil cupiditate quisquam,
-                quasi dicta odit est mollitia impedit suscipit laborum quidem
-                magni sapiente deleniti dolore beatae, unde amet adipisci
-                temporibus culpa excepturi quo perspiciatis! Molestias tempore
-                quidem nihil tempora assumenda facere autem. Illo itaque quaerat
-                accusamus odio dolores. Quia est recusandae debitis distinctio
-                reiciendis nemo voluptatibus iusto fugit rerum ipsam, laboriosam
-                nam neque aliquid possimus illum non, repellat dicta quas error
-                reprehenderit, officia vero cumque dolore nesciunt. Perspiciatis
-                ducimus natus, quasi magnam alias illum eaque officiis,
-                doloribus vero suscipit harum dolorum excepturi voluptates
-                quaerat magni atque. Qui, eligendi quas nulla culpa maxime
-                debitis molestias sit temporibus aliquid, praesentium enim.
-                Magnam nulla asperiores assumenda at qui laborum pariatur
-                quaerat suscipit facere odio excepturi dolores laboriosam
-                veritatis ipsum recusandae, repellat blanditiis eaque error
-                eveniet magni quis architecto quibusdam molestias? Quis, facilis
-                porro modi dolorem sed amet, necessitatibus aliquam omnis magnam
-                consectetur nemo. Earum, voluptatum. Accusamus natus quae ex,
-                nihil id praesentium doloremque odit similique quas alias iusto
-                quasi ab omnis ipsa architecto, totam quaerat nesciunt enim
-                deserunt harum beatae. Natus qui pariatur vel eius, ipsam quo
-                tenetur consequuntur voluptates accusantium magni sed velit,
-                consequatur atque recusandae vero assumenda, doloremque eos
-                quaerat necessitatibus ratione ut. Molestias, esse ut. Tempora,
-                aliquam nihil vero sit deleniti ipsum voluptatem enim veritatis,
-                vitae amet debitis iste, accusantium laudantium in velit!
-                Similique dolorum, explicabo alias optio porro est sit modi
-                delectus. Tempora nulla itaque corrupti totam perferendis
-                expedita asperiores molestias. Consectetur eveniet ipsam
-                molestiae harum a architecto neque? Minus officiis odio quasi
-                assumenda cum vitae modi adipisci, corporis, animi ipsam libero
-                expedita atque, sed velit quibusdam eius repellendus ipsum in
-                perferendis! Possimus amet nulla velit blanditiis facilis est
-                adipisci quaerat impedit placeat recusandae ad, laboriosam
-                tempora maiores dicta asperiores vero odio laborum veritatis
-                ducimus atque eligendi fuga magnam? Quisquam, laudantium.
-                Tempora, corrupti molestiae deleniti nisi, dolor quis
-                perspiciatis harum eius quia quae, blanditiis ut nobis delectus.
-                Neque nostrum saepe quos, ullam fugit, repellendus velit, totam
-                id ducimus cumque explicabo mollitia nisi natus voluptate quod
-                dolores! Consequatur sit laudantium culpa, quos eos ex
-                blanditiis asperiores impedit vero earum molestias beatae
-                voluptate cumque saepe quidem optio rerum ab debitis reiciendis
-                fugiat sequi neque minima! Laboriosam quis, deserunt id dicta
-                maxime, aliquid sint asperiores ratione magni blanditiis commodi
-                impedit repudiandae nobis officiis eum ducimus. Voluptatum
-                beatae, assumenda rem molestias voluptatem minus sunt reiciendis
-                excepturi quod, reprehenderit ratione. Aspernatur amet eligendi
-                animi, voluptates, quos nulla laudantium quia unde suscipit
-                autem sapiente quidem maxime labore quo neque sed saepe
-                reprehenderit aut ad non impedit in expedita. Nisi repellendus
-                quo perspiciatis accusantium nobis totam, voluptas tempora
-                reprehenderit nostrum provident eum ipsam explicabo animi iusto
-                cupiditate ex rerum in soluta tempore labore expedita nemo quam
-                alias! Neque, rerum rem ea fuga dolorem cupiditate, eveniet
-                placeat hic quod, voluptas doloremque. A labore id molestiae
-                recusandae excepturi ducimus vitae dignissimos, dolores cum,
-                ipsam nam vel eveniet magni! A adipisci animi hic eum delectus
-                vero esse, sapiente nihil consequatur nobis enim natus
-                architecto rerum quo. Fugit ratione, optio veritatis quidem ex
-                laudantium quas sit aliquid, ullam nemo odit sapiente asperiores
-                ea odio adipisci debitis maiores placeat. Ducimus numquam nam
-                laborum exercitationem consectetur alias possimus nulla eos
-                expedita deleniti dolor hic vitae quod necessitatibus eius quas
-                et laboriosam, odio aspernatur repellat provident? Illo debitis
-                incidunt facere autem laborum dolores esse ex doloremque quam ea
-                a dolorem omnis, numquam maxime accusantium ratione sed
-                cupiditate, recusandae natus? Ea ratione voluptate eos qui, non
-                unde amet voluptas explicabo nesciunt deleniti nam dolorum
-                facilis dolore, dolor odio voluptatibus, dignissimos adipisci
-                doloremque tempore dicta. Beatae.
+            <section class="servicios_g">
+                <div class="center">
+                    <div class="cont_servicios_g">
+                        <h3>SERVICIOS GREMIALES</h3>
+                        <div class="desc_serv_g">La Federación a través de sus diversos servicios gremiales, busca incrementar la competitividad y la sostenibilidad de la agroindustria de la palma de aceite; difundir y estimular el reconocimiento de los beneficios y bondades de la palma de aceite en el mercado; desarrollado de actividades de parafiscalidad palmer; promover el desarrollo de nuevos negocios. Lo invitamos a conocer en detalle estos y más beneficios de nuestros servicios.
+                        </div>
+                        <!-- Swiper -->
+                        <div class="slider_s_gremiales">
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            
+                            <div class="swiper sliderServiciosG">
+                                <div class="swiper-pagination"></div>
+                                
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <img width="283" height="221" src="images/01-home/image_slider2.jpg" alt="">
+                                            <span for="">Campañas consursos y premios <i class="fas fa-chevron-right"></i> </span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <img width="283" height="221" src="images/01-home/image_slider2.jpg" alt="">
+                                            <span for="">Campañas consursos y premios <i class="fas fa-chevron-right"></i> </span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <img width="283" height="221" src="images/01-home/image_slider2.jpg" alt="">
+                                            <span for="">Campañas consursos y premios <i class="fas fa-chevron-right"></i> </span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <img width="283" height="221" src="images/01-home/image_slider2.jpg" alt="">
+                                            <span for="">Campañas consursos y premios <i class="fas fa-chevron-right"></i> </span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="">
+                                            <img width="283" height="221" src="images/01-home/image_slider2.jpg" alt="">
+                                            <span for="">Campañas consursos y premios <i class="fas fa-chevron-right"></i> </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="boton_serv">
+                            <a href="" class="btn_pri_redondo">Ver todos <i class="fas fa-chevron-right"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="bg_sections">
+
+                <section class="banner_elpalmicultor">
+                    <div class="center">
+                        <div class="cont_b_palmicultor">
+                            <div class="col_pc">
+                                <picture>
+                                    <img src="images/logo_elpalmicultor.svg" width="230" height="44" alt="">
+                                </picture>
+                                <div>Conoce aquí todas las noticias de la palma colombiana</div>
+                            </div>
+                            <div class="col_pc_btn">
+                                <a class="btn_green_outline" href="">ENCUENTRO VIRTUAL <i class="fas fa-chevron-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="noticias_dest">
+                    <div class="center">
+                        <div class="cont_noticias_dest">
+                            <h2> <img src="images/01-home/icono_noticas.svg" width="47" height="40" alt=""> NOTICIAS</h2>
+                            <div class="cont_gen_noticias_d">
+                                <a href="" class="card_noticia_d">
+                                    <picture>
+                                        <img src="images/01-home/noticias.jpg" width="309" height="161" alt="">
+                                    </picture>
+                                    <div class="card_content">
+                                        <span>Bogotá, 19 de agosto de 2021</span>
+                                        <h5>Nicolás Pérez Marulanda asume Presidencia Ejecutiva de Fedepalma</h5>
+                                        <summary>
+                                            El economista Nicolás Pérez Marulanda, asume hoy la Presidencia Ejecutiva de la FederaciónEl economista Nicolás Pérez Marulanda, asume hoy la Presidencia Ejecutiva de la Federación
+                                        </summary>
+                                        <div class="btn_leermas">Leer más <i class="fas fa-chevron-right"></i> </div>
+                                    </div>
+                                </a>
+                                <a href="" class="card_noticia_d">
+                                    <picture>
+                                        <img src="images/01-home/noticias.jpg" width="309" height="161" alt="">
+                                    </picture>
+                                    <div class="card_content">
+                                        <span>Bogotá, 19 de agosto de 2021</span>
+                                        <h5>Nicolás Pérez Marulanda asume Presidencia Ejecutiva de Fedepalma</h5>
+                                        <summary>
+                                            El economista Nicolás Pérez Marulanda, asume hoy la Presidencia Ejecutiva de la Federación
+                                        </summary>
+                                        <div class="btn_leermas">Leer más <i class="fas fa-chevron-right"></i> </div>
+                                    </div>
+                                </a>
+                                <a href="" class="card_noticia_d">
+                                    <picture>
+                                        <img src="images/01-home/noticias.jpg" width="309" height="161" alt="">
+                                    </picture>
+                                    <div class="card_content">
+                                        <span>Bogotá, 19 de agosto de 2021</span>
+                                        <h5>Nicolás Pérez Marulanda asume Presidencia Ejecutiva de Fedepalma</h5>
+                                        <summary>
+                                            El economista Nicolás Pérez Marulanda, asume hoy la Presidencia Ejecutiva de la Federación
+                                        </summary>
+                                        <div class="btn_leermas">Leer más <i class="fas fa-chevron-right"></i> </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </div>
+
+            <section class="s_palmitultores_dest">
+                <div class="center">
+                    <div class="cont_palmicultores_dest">
+                        <div class="tit_palmicultores">
+                            <img src="images/01-home/icon_palma.svg" width="58" height="62" alt="">
+                            <h2>PALMICULtores DESTACADOs</h2>
+                        </div>
+                        <!-- Swiper -->
+                        <div class="swiper sliderPalmicultores">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <img src="images/01-home/img_señor.png" width="84" height="84" alt="">
+                                    </picture>
+                                    <h5>
+                                        jhon doe
+                                    </h5>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus sed dignissim elementum lectus. Leo facilisis nisl non at nisi, sit sit nibh ut. Risus sed dignissim elementum lectus. Leo facilisis nisl non at nisi, sit sit nibh ut. </div>
+                                    <a href="" class="btn_outline_blanco">proyecto <i class="fas fa-chevron-right"></i> </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <img src="images/01-home/img_señor.png" width="84" height="84" alt="">
+                                    </picture>
+                                    <h5>
+                                        jhon doe
+                                    </h5>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus sed dignissim elementum lectus. Leo facilisis nisl non at nisi, sit sit nibh ut. Risus sed dignissim elementum lectus. Leo facilisis nisl non at nisi, sit sit nibh ut. </div>
+                                    <a href="" class="btn_outline_blanco">proyecto <i class="fas fa-chevron-right"></i> </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <img src="images/01-home/img_señor.png" width="84" height="84" alt="">
+                                    </picture>
+                                    <h5>
+                                        jhon doe
+                                    </h5>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus sed dignissim elementum lectus. Leo facilisis nisl non at nisi, sit sit nibh ut. Risus sed dignissim elementum lectus. Leo facilisis nisl non at nisi, sit sit nibh ut. </div>
+                                    <a href="" class="btn_outline_blanco">proyecto <i class="fas fa-chevron-right"></i> </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <img src="images/01-home/img_señor.png" width="84" height="84" alt="">
+                                    </picture>
+                                    <h5>
+                                        jhon doe
+                                    </h5>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus sed dignissim elementum lectus. Leo facilisis nisl non at nisi, sit sit nibh ut. Risus sed dignissim elementum lectus. Leo facilisis nisl non at nisi, sit sit nibh ut. </div>
+                                    <a href="" class="btn_outline_blanco">proyecto <i class="fas fa-chevron-right"></i> </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <img src="images/01-home/img_señor.png" width="84" height="84" alt="">
+                                    </picture>
+                                    <h5>
+                                        jhon doe
+                                    </h5>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus sed dignissim elementum lectus. Leo facilisis nisl non at nisi, sit sit nibh ut. Risus sed dignissim elementum lectus. Leo facilisis nisl non at nisi, sit sit nibh ut. </div>
+                                    <a href="" class="btn_outline_blanco">proyecto <i class="fas fa-chevron-right"></i> </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s_organizaciones">
+                <div class="center">
+                    <div class="cont_organizaciones">
+                        <h3>organizaciones y programas</h3>
+                        <div class="cont_logos">
+                            <picture>
+                                <img width="100" height="34px" src="images/logo_fedepalma.svg" alt="">
+                            </picture>
+                            <picture>
+                                <img width="100" height="34px" src="images/01-home/logo_cenipalma.png" alt="">
+                            </picture>
+                            <picture>
+                                <img width="100" height="34px" src="images/01-home/logo_tecnopalma.png" alt="">
+                            </picture>
+                            <picture>
+                                <img width="100" height="34px" src="images/01-home/logo_aceite_p.svg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer>
@@ -437,6 +491,75 @@
             <script src="js/main.js"></script>
 
             <!-- **************** -->
+                <div class="cont_gen_footer">
+                    <div class="center">
+                        <div class="cont_footer">
+                            <div class="col1">
+                                <a href="">
+                                    <img src="images/logo_fedepalma.svg" width="152" height="52" alt="">
+                                </a>
+                                <summary>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae atque tempora nulla non, exercitationem doloribus laboriosam nesciunt et aspernatur voluptate!
+                                </summary>
+                            </div>
+                            <div class="col2">
+                                <h4>CONTACTO</h4>
+                                <div>
+                                    Calle 98 No. 70 - 91 Piso 14 y 15 - Centro Empresarial Pontevedra
+                                </div>
+                                <ul>
+                                    <li><a href=""> <span class="fas fa-phone"></span> 313 8600 </a></li>
+                                    <li><a href=""> <span class="fas fa-envelope-open"></span> info@fedepalma.org </a></li>
+                                    <li>Bogotá, Colombia</li>
+                                </ul>
+                            </div>
+                            <div class="col3">
+                                <h4>NAVEGACION</h4>
+                                <nav class="nav_footer_menu">
+                                    <ul>
+                                        <li> <a href="">Servicios gremiales</a> </li>
+                                        <li> <a href="">Registro y afiliación</a> </li>
+                                        <li> <a href="">Sostenibilidad</a> </li>
+                                        <li> <a href="">Fondos</a> </li>
+                                        <li> <a href="">CID Palmero</a> </li>
+
+                                        <li> <a href="">Noticias</a> </li>
+                                        <li> <a href="">Contacto</a> </li>
+                                        <li> <a href="">Ceniplama</a> </li>
+                                        <li> <a href="">Junta directiva</a> </li>
+                                        <li> <a href="">Informes de precios</a> </li>
+
+                                        <li> <a href="">Trabaje con nosotros</a> </li>
+                                        <li> <a href="">Reportes línea ética</a> </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont_gen_subfooter">
+                    <div class="center">
+                        <div class="txt_legal">
+                            <div class="tl1">
+                                © 2022 COPYRIGHT © - Diseñador y desarrollado por <a class="link_paxzu" href=""> PAXZU </a> -Todos los derechos reservados.
+                            </div>
+                            <div class="tl2">
+                                <a href="">Políticas de privacidad</a> <a href="">Mapa del sitio</a> 
+                            </div>
+                        </div>
+                        <div class="social_subfooter">
+                            <h5>Redes sociales</h5>
+                            <ul>
+                                <li>
+                                    <a href=""> <span class="fab fa-facebook-f"></span></a>
+                                    <a href=""> <span class="fab fa-twitter"></span></a>
+                                    <a href=""> <span class="fab fa-instagram"></span></a>
+                                    <a href=""> <span class="fab fa-youtube"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
         </footer>
     </body>
