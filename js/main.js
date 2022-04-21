@@ -2,10 +2,12 @@ $(document).ready(function(){
 
     // AJUSTE FOOTER CON SECCIONES
 
-    const borderFooter = $('.s_contacto').is(':visible');
+    const fixFooterContacto = $('.s_contacto').is(':visible');
 
-    if('borderFooter'){
+    if('fixFooterContacto'){
         $('footer').css('margin-top', '-50px');
+    }else{
+        $('footer').css('margin-top', '0px');
     }
     
 
@@ -63,6 +65,7 @@ $(document).ready(function(){
     homeSliderServiciosG();
     swiperNoticiasDest();
     homeSliderPalmicultores();
+    palmicultoresSlider()
 
 })
 
@@ -77,6 +80,36 @@ function homeHeroSlider(){
             clickable: true,
             el: ".swiperHero .swiper-pagination",
         },
+    });
+}
+
+function palmicultoresSlider(){
+    let swiper = new Swiper(".c_slider_plamicultores .swiperPalmicultor", {
+        slidesPerView: 1,
+        spaceBetween:10,
+        pagination: {
+            clickable: true,
+            el: ".c_slider_plamicultores .swiper-pagination",
+        },
+        breakpoints: {
+            380: {
+              slidesPerView: 1,
+              spaceBetween: 10
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 10
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 30
+            },
+            940: {
+                slidesPerView: 5,
+                spaceBetween: 40
+            }
+            
+        }
     });
 }
 
