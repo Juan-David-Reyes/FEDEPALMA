@@ -1,5 +1,20 @@
 $(document).ready(function(){
 
+    // click change class
+
+    $('.scroll_h_fechas a').click(function(){
+        $('.scroll_h_fechas a').removeClass('active_costos');
+        $(this).toggleClass('active_costos')
+    });
+
+    // ---------------------
+
+    // DRAG FECHAS
+
+    const ele = document.getElementsByClassName('scroll_h_fechas');
+    ele.scrollTop = 100;
+    ele.scrollLeft = 150;
+
     $('.nav_btn').click(function(){
         $('.black_screen').fadeIn();
         $('.nav_main').addClass('active');
