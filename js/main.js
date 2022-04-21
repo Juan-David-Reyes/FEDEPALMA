@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+    // AJUSTE FOOTER CON SECCIONES
+
+    const borderFooter = $('.s_contacto').is(':visible');
+
+    if('borderFooter'){
+        $('footer').css('margin-top', '-50px');
+    }
+    
+
     // click change class
 
     $('.scroll_h_fechas a').click(function(){
