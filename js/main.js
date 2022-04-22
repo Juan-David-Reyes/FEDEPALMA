@@ -6,7 +6,7 @@ $(document).ready(function(){
     const fixFooterSagrilaft = $('main section').hasClass('s_instructivos');
 
 
-    if(fixFooterContacto, fixFooterSagrilaft){
+    if(fixFooterContacto + fixFooterSagrilaft){
         $('footer').css('margin-top', '-50px');
     }else{
         $('footer').css('margin-top', '0px');
