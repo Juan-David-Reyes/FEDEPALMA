@@ -1006,12 +1006,12 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
   background: url("../images/01-home/bg_sections.png"), linear-gradient(180deg, #fafafa 0%, #fafafa 100%) no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
   padding: 30px 0 100px;
 }
 .bg_sections.img_2 {
   background-image: url("../images/06-palmicultor_dest/reverse_bg_section.png");
-  background-position: bottom;
+  background-position: top;
 }
 
 .cont_organizaciones {
@@ -1305,6 +1305,18 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
 .cont_title_page .desc_page.m_size1 span {
   color: var(--txt-btn-3);
   font-weight: 700;
+}
+.cont_title_page .desc_page.m_size2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+.cont_title_page .desc_page.m_size2 span {
+  color: var(--txt-btn-3);
+  font-weight: 400;
+}
+.cont_title_page .desc_page.m_size2 + h1 {
+  margin-bottom: 30px;
 }
 .cont_title_page .desc_page.s_size {
   font-size: 16px;
@@ -2667,6 +2679,219 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
   box-sizing: border-box;
 }
 
+.c_sagrilaft {
+  padding: 40px 0 0;
+}
+.c_sagrilaft .txt1 {
+  text-align: center;
+  max-width: 780px;
+  margin: auto;
+}
+
+.cards_sagrilaft {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+.cards_sagrilaft .card_sagr {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  align-items: center;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+  box-shadow: 0px 36px 18px -26px rgba(0, 0, 0, 0.21);
+  border-radius: 18px;
+  padding: 30px;
+  box-sizing: border-box;
+  max-width: 500px;
+}
+.cards_sagrilaft .card_sagr:first-child {
+  justify-self: flex-end;
+}
+.cards_sagrilaft .card_sagr:last-child {
+  justify-self: flex-start;
+}
+.cards_sagrilaft .card_sagr picture {
+  max-width: 68px;
+  justify-self: center;
+}
+.cards_sagrilaft .card_sagr picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cont_video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.cont_video .js-video-button {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.cont_video .js-video-button img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.s_sistema_inf {
+  -webkit-mask-image: url("../images/07-sagrilaft/mask.svg");
+          mask-image: url("../images/07-sagrilaft/mask.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  background: url("../images/07-sagrilaft/bg_mask.png") no-repeat center;
+  background-size: cover;
+  position: relative;
+  -webkit-mask-position: center top;
+          mask-position: center top;
+  padding: 60px 0;
+}
+.s_sistema_inf::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  height: 6px;
+  border-radius: 100px;
+  background-color: var(--amarillo);
+}
+
+.c_sistema_inf h4 {
+  text-align: center;
+  color: var(--txt-titulo-blanco);
+}
+
+.cont_sistemas .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cont_sistemas .swiper-slide picture {
+  border-radius: 100px;
+  filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.57));
+  background: linear-gradient(rgba(255, 255, 255, 0), #FFF);
+  padding: 20px;
+  box-sizing: border-box;
+  width: 105px;
+  height: 105px;
+}
+.cont_sistemas .swiper-slide picture::before {
+  content: "";
+  background-color: var(--bg_btn-2);
+  width: 93%;
+  height: 93%;
+  border-radius: 100px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+.cont_sistemas .swiper-slide picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  z-index: 1;
+}
+.cont_sistemas .swiper-slide h5 {
+  margin: 20px 0;
+  color: var(--verde-claro);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.cont_sistemas .swiper-slide .txt_sis_sagrilaft {
+  font-size: 14px;
+  color: var(--txt-parrafo-blanco);
+  min-height: 110px;
+}
+.cont_sistemas .swiper-pagination-bullet {
+  background-color: var(--fondo-s1);
+  opacity: 1;
+  width: 14px;
+  height: 14px;
+  border-radius: 100px;
+  transition: 300ms ease;
+}
+.cont_sistemas .swiper-pagination-bullet-active {
+  background-color: var(--verde-claro);
+  width: 24px;
+}
+
+.txt_desc {
+  max-width: 750px;
+  margin: 30px auto;
+}
+
+.al_center {
+  text-align: center;
+}
+
+.light {
+  color: var(--txt-titulo-blanco);
+}
+
+.c_instructivos {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+  gap: 40px;
+  padding: 40px 0 0;
+}
+.c_instructivos .instructivos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+.c_instructivos .instructivos .col_instruct {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.c_instructivos .instructivos .col_instruct picture {
+  width: 100%;
+  max-width: 195px;
+  box-shadow: 0px 20px 19px -15px rgba(0, 0, 0, 0.33);
+  display: inline-block;
+  background-color: transparent;
+  max-height: 225px;
+}
+.c_instructivos .instructivos .col_instruct picture img {
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.c_instructivos .instructivos .col_instruct h5 {
+  justify-self: center;
+  text-align: center;
+}
+.c_instructivos .desc_instructivos {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
 @media screen and (max-width: 1200px) {
   .txt_legal {
     font-size: 12px;
@@ -2759,6 +2984,14 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
 
   .s_header_palmicultor_dest .center {
     padding: 0 40px;
+  }
+
+  .swiperSagrilaft {
+    padding-bottom: 60px;
+  }
+
+  .s_sistema_inf {
+    padding: 60px 0 30px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2872,6 +3105,23 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
 
   .s_ley_transparencia {
     padding: 20px 20px 180px;
+  }
+
+  .cards_sagrilaft {
+    grid-template-columns: 1fr;
+  }
+
+  .cards_sagrilaft .card_sagr:first-child, .cards_sagrilaft .card_sagr:last-child {
+    justify-self: center;
+  }
+
+  .cont_sistemas .swiper-slide .txt_sis_sagrilaft {
+    min-height: 80px;
+  }
+
+  .c_instructivos {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {

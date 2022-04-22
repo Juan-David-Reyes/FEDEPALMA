@@ -2,9 +2,11 @@ $(document).ready(function(){
 
     // AJUSTE FOOTER CON SECCIONES
 
-    const fixFooterContacto = $('.s_contacto').is(':visible');
+    const fixFooterContacto = $('main section').hasClass('s_contacto');
+    const fixFooterSagrilaft = $('main section').hasClass('s_instructivos');
 
-    if('fixFooterContacto'){
+
+    if(fixFooterContacto, fixFooterSagrilaft){
         $('footer').css('margin-top', '-50px');
     }else{
         $('footer').css('margin-top', '0px');
@@ -66,7 +68,7 @@ $(document).ready(function(){
     swiperNoticiasDest();
     homeSliderPalmicultores();
     palmicultoresSlider()
-
+    agrilaftSlider()
 })
 
 function homeHeroSlider(){
@@ -84,6 +86,36 @@ function homeHeroSlider(){
 }
 
 function palmicultoresSlider(){
+    let swiper = new Swiper(".cont_sistemas .swiperSagrilaft", {
+        slidesPerView: 1,
+        spaceBetween:0,
+        pagination: {
+            clickable: true,
+            el: ".cont_sistemas .swiper-pagination",
+        },
+        breakpoints: {
+            380: {
+              slidesPerView: 1,
+              spaceBetween: 0
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            },
+            940: {
+                slidesPerView: 4,
+                spaceBetween: 40
+            }
+            
+        }
+    });
+}
+
+function sagrilaftSlider(){
     let swiper = new Swiper(".c_slider_plamicultores .swiperPalmicultor", {
         slidesPerView: 1,
         spaceBetween:10,
