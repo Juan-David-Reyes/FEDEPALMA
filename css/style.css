@@ -122,6 +122,7 @@ a {
   color: var(--txt-btn-1);
   font-family: var(--font-raleway);
   padding: 10px 20px;
+  margin-bottom: 10px;
 }
 .btn_color1:hover, .btn_color2:hover, .btn_color3:hover, .btn_color4:hover {
   transition: 300ms ease;
@@ -2053,6 +2054,7 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
+  gap: 20px;
 }
 .cont_gen_equipo_t .card_equipo_t {
   display: grid;
@@ -2892,6 +2894,70 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
   line-height: 1.4;
 }
 
+.s_cifras_sector {
+  margin: 60px 0 120px;
+  box-sizing: border-box;
+}
+
+.cont_gen_cifras {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.cont_gen_cifras .col_images {
+  display: inline-flex;
+  gap: 20px;
+}
+.cont_gen_cifras .col_images picture {
+  overflow: hidden;
+  border-radius: 8px;
+}
+.cont_gen_cifras .col_images picture:nth-child(1) {
+  transform: translateY(60px);
+}
+.cont_gen_cifras .col_images picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cont_gen_cifras .col_info .btn_pri_redondo {
+  margin-top: 20px;
+}
+.cont_gen_cifras .nav_tabs {
+  padding: 16px 0 8px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #D0D0D0;
+}
+.cont_gen_cifras .nav_tabs ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.cont_gen_cifras .nav_tabs ul li .tab_item_btn {
+  display: inline-block;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+.cont_gen_cifras .nav_tabs ul li .tab_item_btn.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -14px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: var(--amarillo);
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 1200px) {
   .txt_legal {
     font-size: 12px;
@@ -2992,6 +3058,10 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
 
   .s_sistema_inf {
     padding: 60px 0 30px;
+  }
+
+  .cont_gen_cifras {
+    gap: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3123,6 +3193,26 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
     grid-template-columns: 1fr;
     text-align: center;
   }
+
+  .cont_gen_cifras {
+    grid-template-columns: 1fr;
+  }
+
+  .cont_gen_cifras .col_images picture {
+    width: 100%;
+  }
+
+  .cont_gen_datos_eco .cont_datos1 {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .cont_gen_datos_eco .card_datos_eco_2 {
+    grid-template-columns: 1fr;
+  }
+
+  .cont_gen_equipo_t {
+    grid-template-columns: 1fr;
+  }
 }
 @media screen and (max-width: 480px) {
   footer .cont_footer .col3 .nav_footer_menu ul {
@@ -3157,6 +3247,26 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
 
   .cont_gen_cifras_finance {
     padding: 20px;
+  }
+
+  .cont_gen_datos_eco .card_datos_eco_2 .card_datos_eco {
+    grid-template-columns: 1fr;
+  }
+
+  .cont_gen_datos_eco {
+    padding: 20px;
+  }
+
+  .cont_gen_cifras .col_images picture img {
+    max-height: 250px;
+  }
+
+  .cont_gen_cifras .col_images picture:nth-child(1) {
+    transform: translateY(0px);
+  }
+
+  .cont_gen_equipo_t .card_equipo_t {
+    grid-template-columns: 110px 2fr;
   }
 }
 @media screen and (max-width: 380px) {

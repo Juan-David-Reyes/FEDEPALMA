@@ -4,9 +4,10 @@ $(document).ready(function(){
 
     const fixFooterContacto = $('main section').hasClass('s_contacto');
     const fixFooterSagrilaft = $('main section').hasClass('s_instructivos');
+    const fixFooterEquipoTrabajo = $('main section').hasClass('s_equipo_trabajo');
 
 
-    if(fixFooterContacto + fixFooterSagrilaft){
+    if(fixFooterContacto + fixFooterSagrilaft + fixFooterEquipoTrabajo){
         $('footer').css('margin-top', '-50px');
     }else{
         $('footer').css('margin-top', '0px');
@@ -63,13 +64,20 @@ $(document).ready(function(){
         $(this).toggleClass('active');
     }); 
 
+/*     AGREGA CLASE ACTIVE A TABS - INTERNA SOSTENIBILIDAD ECONOMICA */
+    
+    $('.tab_item_btn').click(function(){
+        $('.tab_item_btn').removeClass('active');
+        $(this).toggleClass('active');
+    }); 
+
     homeHeroSlider();
     homeSliderServiciosG();
     swiperNoticiasDest();
     homeSliderPalmicultores();
     palmicultoresSlider()
     agrilaftSlider()
-})
+});
 
 function homeHeroSlider(){
     let swiper = new Swiper(".swiperHero", {
