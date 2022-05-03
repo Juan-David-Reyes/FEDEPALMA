@@ -2910,8 +2910,11 @@ header{
                     position: relative;
                     cursor: pointer;
                     text-align: center;
+                    font-weight: 800;
+                    font-family: var(--font-raleway);
+                    color: var(--txt-btn-2);
                     &.active{
-
+                        color: var(--rojo_oscuro);
                         &::before{
                             content: '';
                             position: absolute;

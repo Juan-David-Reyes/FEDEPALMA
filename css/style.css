@@ -2944,6 +2944,12 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
   position: relative;
   cursor: pointer;
   text-align: center;
+  font-weight: 800;
+  font-family: var(--font-raleway);
+  color: var(--txt-btn-2);
+}
+.cont_gen_cifras .nav_tabs ul li .tab_item_btn.active {
+  color: var(--rojo_oscuro);
 }
 .cont_gen_cifras .nav_tabs ul li .tab_item_btn.active::before {
   content: "";
