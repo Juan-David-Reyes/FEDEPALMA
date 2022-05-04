@@ -79,6 +79,15 @@ $(document).ready(function(){
     agrilaftSlider()
 });
 
+/* TOGGLE INTERNA INTERNAS FONDOS  - MENU LISTA DOCUMENTOS */
+
+$('.btn_lista_doc').click(function(){
+    $('.dropdown_list_doc').slideToggle();
+    $('.fas.fa-chevron-down').toggleClass('fa-chevron-up');
+}); 
+
+/* ******** */
+
 function homeHeroSlider(){
     let swiper = new Swiper(".swiperHero", {
         parallax: true,
