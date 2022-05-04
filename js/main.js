@@ -51,6 +51,12 @@ $(document).ready(function(){
         $('.atajos_side').toggleClass('active');
     });
 
+    $('main').click(function(){
+        if($('.atajos_side').hasClass('active')){
+            $('.atajos_side').removeClass('active');
+        }
+    });
+
     // FUNCIONAMIENTO DEL SLIDER
 
     $('.link_m_pri').click(function(){
