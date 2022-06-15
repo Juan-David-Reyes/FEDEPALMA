@@ -70,7 +70,7 @@ $(document).ready(function(){
         $(this).toggleClass('active');
     }); 
 
-/*     AGREGA CLASE ACTIVE A TABS - INTERNA SOSTENIBILIDAD ECONOMICA */
+    /*   AGREGA CLASE ACTIVE A TABS - INTERNA SOSTENIBILIDAD ECONOMICA */
     
     $('.tab_item_btn').click(function(){
         $('.tab_item_btn').removeClass('active');
@@ -81,8 +81,10 @@ $(document).ready(function(){
     homeSliderServiciosG();
     swiperNoticiasDest();
     homeSliderPalmicultores();
-    palmicultoresSlider()
-    agrilaftSlider()
+    palmicultoresSlider();
+    sagrilaftSlider();
+    swiperPubliUltimas();
+    swiperNewPubli();
 });
 
 /* TOGGLE INTERNA INTERNAS FONDOS  - MENU LISTA DOCUMENTOS */
@@ -244,5 +246,53 @@ function homeSliderPalmicultores(){
         pagination: {
             el: ".sliderPalmicultores .swiper-pagination",
         },
+    });
+}
+
+/* SLIDER 1 INTERNA PUBLICACIONES */
+
+function swiperNewPubli(){
+    let swiper = new Swiper(".gran_c_slider_publ .swiperNewPublicacion", {
+        slidesPerView: 1,
+        spaceBetween: 80,
+        pagination: {
+            el: ".swiper-pagination",
+          },
+    });
+}
+
+
+/* SLIDER 2 INTERNA PUBLICACIONES */
+
+function swiperPubliUltimas(){
+    let swiper = new Swiper(".gran_c_publi_ultimas .swiperPubliUltimas", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.gran_c_publi_ultimas .swiper-button-next',
+            prevEl: '.gran_c_publi_ultimas .swiper-button-prev',
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            380: {
+              slidesPerView: 1,
+              spaceBetween: 10
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 30
+            },
+            // when window width is >= 640px
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30
+            },
+            940: {
+                slidesPerView: 3,
+                spaceBetween: 40
+              }
+            
+        }
     });
 }
