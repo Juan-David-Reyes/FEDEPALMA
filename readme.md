@@ -9,7 +9,11 @@ Rediseño del sitio web
 
 [Documentation](https://linktodocumentation)
 
-clases de los botones por color de relleno
+CLASES DE BOTONES
+
+.btn_pri_redondo
+
+- clases de los botones por color de relleno
 
 .btn_color1
 
