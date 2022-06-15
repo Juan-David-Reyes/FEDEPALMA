@@ -3256,7 +3256,26 @@ header{
 
 .gran_c_slider_publ{
     position: relative;
-
+    .swiper-pagination{
+        bottom: -12px;
+        background-color: var(--verde-oscuro);
+        margin: 0 auto;
+        max-width: max-content;
+        width: 100%;
+        right: 0;
+        left: 0;
+        border-radius: 100px;
+        padding: 2px 10px;
+    }
+    .swiper-pagination-bullet{
+        background-color: var(--txt-btn-1);
+        width: 12px;
+        height: 12px;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: var(--amarillo);
+    }
 }
 .gran_c_publi_ultimas{
     position: relative;
@@ -3293,6 +3312,9 @@ header{
             margin: 0 0 20px;
             font-size: 15px;
             line-height: 1.5;
+        }
+        h5{
+            margin: 20px 0 4px;
         }
     }
 }
@@ -3335,6 +3357,18 @@ header{
 
 .cont_desc_new_publi{
     text-align: left;
+    h4{
+        margin: 0;
+        background-color: #272C14;
+        color: var(--txt-parrafo-blanco);
+        padding: 6px 24px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: max-content;
+    }
+    .txt1{
+        padding: 20px 0;
+    }
 }
 
 .cat_new_publi{
@@ -3351,6 +3385,10 @@ header{
     box-sizing: border-box;
     border: 1px solid #7E7E7E;
     border-radius: 13px;
+}
+.s_publicaciones{
+    padding: 30px 0 100px;
+    box-sizing: border-box;
 }
 
 

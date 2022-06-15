@@ -286,11 +286,11 @@ function swiperPubliUltimas(){
             // when window width is >= 640px
             768: {
               slidesPerView: 2,
-              spaceBetween: 30
+              spaceBetween: 100
             },
             940: {
                 slidesPerView: 3,
-                spaceBetween: 40
+                spaceBetween: 100
               }
             
         }
