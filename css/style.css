@@ -3721,6 +3721,26 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
     border-radius: 8px;
     overflow: hidden;
   }
+
+  .swiperNewPublicacion .swiper-slide {
+    flex-direction: column;
+  }
+
+  .gran_c_publi_ultimas {
+    padding: 40px;
+  }
+
+  .gran_c_slider_publ {
+    padding: 60px 30px;
+  }
+
+  .gran_c_publi_ultimas .swiper-button-next, .gran_c_publi_ultimas .swiper-rtl .swiper-button-prev {
+    right: -10px;
+  }
+
+  .gran_c_publi_ultimas .swiper-button-prev, .gran_c_publi_ultimas .swiper-rtl .swiper-button-next {
+    left: -10px;
+  }
 }
 @media screen and (max-width: 480px) {
   footer .cont_footer .col3 .nav_footer_menu ul {
