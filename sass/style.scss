@@ -3650,6 +3650,225 @@ header{
     padding-bottom: 60px;
 }
 
+/* ESTILOS INTERNA GOBIERNO CORPORATIVO */
+.c_gob_corp{
+    padding: 40px 0 0;
+    box-sizing: border-box;
+}
+.ctas_gc{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+ .single_gc{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.16);
+    border-radius: 44px;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    h4{
+        margin: 0 0 20px;
+    }
+    .txt_gc{
+        margin: 0 0 20px;
+    }
+    .btn_gc{
+        background-color: var(--rojo_oscuro);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        padding: 4px 12px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        color: #FFF;
+        gap: 6px;
+        font-weight: 700;
+        margin: 0;
+        font-size: 13px;
+        &.v2{
+            font-weight: 700;
+            background-color: var(--amarillo);
+        }
+        span{
+        }
+
+    }
+ }
+
+ .btn_small{
+    background-color: var(--rojo_oscuro);
+    padding: 4px 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 12px;
+ }
+ .c_sectorial, .c_fedepalma{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.16);
+    border-radius: 20px;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 120px;
+    height: fit-content;
+    >h4{
+        text-align: center;
+    }
+ }
+
+ .cont_sect_fede{
+    margin: 0 0 30px;
+    .desc{
+        text-align: center;
+        margin: 10px 0;
+    }
+ }
+
+.tag_sector{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    padding: 4px 20px;
+    box-sizing: border-box;
+    background: #E9E9E9;
+    border-radius: 7px;
+    color: var(--bg_btn-2);
+    font-family: var(--font-raleway);
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.mb-1{
+    margin-bottom: 10px!important;
+}
+.mx-0{
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+.my-1{
+    margin: 10px 0!important;
+}
+
+.tit_item_sect{
+    width: 100%;
+    font-weight: 700;
+    font-family: var(--font-raleway);
+    padding: 15px;
+    box-sizing: border-box;
+    h5{
+        color: #FFF;
+        margin: 0;
+        text-align: center;
+        text-transform: none;
+    }
+    &.bg1{
+        background-color: var(--fondo-s3);
+    }
+    &.bg2{
+        background-color: var(--bg_btn-3);
+    }
+    &.bg3{
+        background-color: var(--bg_btn-4);
+    }
+}
+.cont_sect_item{
+    background: #EFEFEF;
+    margin: 0 0 30px;
+    padding: 0 0 20px;
+    .desc{
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+}
+
+.c_gob_cor_doble{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: stretch;
+    gap: 30px;
+}
+
+.cont_sect_outline, .c_comite_outline{
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px dashed #848484;
+    border-radius: 16px;
+    height: fit-content;
+    .desc{
+        margin: 0 0 20px;
+        text-align: center;
+    }
+    h5{
+        margin: 0 0 20px;
+        font-size: 16px;
+        text-transform: none;
+    }
+}
+
+.aside_outline{
+    > div{
+        margin: 0 0 20px;
+    }
+}
+.cont_sect_outline{
+    margin: 0 0 20px;
+}
+.c_comite_outline:last-child{
+    grid-column: 2/3;
+}
+
+.doble_items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.c_fedepalma{
+    padding: 30px 20px;
+}
+
+.itm{
+    margin: 0 0 30px;
+    &:last-child{
+        margin: 0;
+    }
+    h5{
+        background-color: var(--bg_btn-4);
+        border-radius: 4px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #FFF;
+        font-weight: 400;
+    }
+    .desc{
+        text-align: left;
+        font-size: 13px;
+    }
+    .ctas_gc{
+        gap: 10px;
+    }
+}
+
+.c_gris{
+    background-color: #D2D2D2!important;
+    color: #282828!important;
+    font-weight: 400;
+}
+
+.s_gob_corp.bg_sections{
+    padding-bottom: 0;
+}
+
+
+
+
 @media screen and (max-width:1200px){
     .txt_legal{
         font-size: 12px;
@@ -3742,6 +3961,15 @@ header{
     .social_side a{
         font-size: 14px;
         padding: 9px;
+    }
+
+    /* ESTILOS GOBIERNO CORPORATIVO */
+
+    .c_sectorial, .c_fedepalma{
+        padding: 10px;
+    }
+    .c_gob_cor_doble{
+        gap: 10px;
     }
 }
 @media screen and (max-width:768px){
@@ -3920,6 +4148,21 @@ header{
     .c_publicaciones h4{
         margin-bottom: 0;
     }
+
+    /* ESTILOS GOBIERNO CORPORATIVO */
+
+    .c_gob_cor_doble{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .c_sectorial, .c_fedepalma{
+        position: static;
+    }
+    .doble_items{
+        gap: 10px;
+    }
+
 }
 @media screen and (max-width:480px){
     footer .cont_footer .col3 .nav_footer_menu ul{
@@ -3972,6 +4215,12 @@ header{
     }
     .banner_fp .c_info_banner_fp h3{
         text-align: center;
+    }
+
+    /* ESTILOS GOBIERNO CORPORATIVO */
+    
+    .doble_items{
+        grid-template-columns: 1fr;
     }
 }
 @media screen and (max-width:380px){
