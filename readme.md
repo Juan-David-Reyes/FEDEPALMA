@@ -32,6 +32,7 @@ descripciones en la seccion header de las paginas
 
 .s_size
 
+mt-0  =  margin tp 0
 
 FONDO GRID TEXTURA DE SECCIONES
 

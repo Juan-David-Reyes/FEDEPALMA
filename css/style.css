@@ -129,6 +129,7 @@ a {
   font-family: var(--font-raleway);
   padding: 10px 20px;
   margin-bottom: 10px;
+  box-sizing: border-box;
 }
 .btn_color1:hover, .btn_color2:hover, .btn_color3:hover, .btn_color4:hover {
   transition: 300ms ease;
@@ -914,8 +915,7 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
-  /* number of lines to show */
+  -webkit-line-clamp: 3; /* number of lines to show */
   line-clamp: 3;
   -webkit-box-orient: vertical;
   line-height: 1.3;
@@ -1418,8 +1418,7 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
-  /* number of lines to show */
+  -webkit-line-clamp: 4; /* number of lines to show */
   line-clamp: 4;
   -webkit-box-orient: vertical;
 }
@@ -1596,8 +1595,7 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
-  /* number of lines to show */
+  -webkit-line-clamp: 2; /* number of lines to show */
   line-clamp: 2;
   -webkit-box-orient: vertical;
   margin-bottom: 20px;
@@ -3423,15 +3421,268 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
 }
 
 .s_publicaciones {
-  padding: 30px 0 100px;
+  padding: 50px 0 20px;
   box-sizing: border-box;
+}
+
+/* ESTILOS SOSTENIBILIDAD SOCIAL */
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.c_white {
+  color: var(--txt-btn-1);
+}
+
+.txt_desc_social b {
+  color: var(--rojo_oscuro);
+  font-weight: 800;
+}
+
+.s_sos_social.bg_sections {
+  padding-bottom: 0;
+}
+
+.c_sos_social {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 60px;
+  align-items: center;
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+.c_sos_social picture {
+  display: inline-block;
+  position: relative;
+  max-width: 400px;
+  justify-self: center;
+}
+.c_sos_social picture img {
+  border-radius: 14px;
+  position: relative;
+  z-index: 3;
+}
+.c_sos_social picture::before, .c_sos_social picture::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  background-color: var(--bg_btn-3);
+  transform: rotate(-6deg);
+  inset: 0;
+  z-index: 2;
+}
+.c_sos_social picture::after {
+  transform: rotate(-12deg);
+  background-color: var(--bg_btn-2);
+  z-index: 1;
+}
+
+.items_ejes_accion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 30px 0;
+}
+.items_ejes_accion .btn_color1, .items_ejes_accion .btn_color2, .items_ejes_accion .btn_color3, .items_ejes_accion .btn_color4 {
+  min-height: 56px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.items_ejes_accion .desc {
+  line-height: 1.5;
+}
+.items_ejes_accion .eje_accion {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+.items_ejes_accion .btn_link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.items_ejes_accion .btn_link span {
+  transition: 300ms ease-out;
+}
+.items_ejes_accion .btn_link.active span {
+  transform: rotate(180deg);
+}
+
+.dropdown_menu {
+  position: relative;
+  display: inline-block;
+}
+
+.ddm_s_social {
+  background: #FFFFFF;
+  box-shadow: 0px -1px 10px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  left: calc(50% - 120px);
+  top: 30px;
+  min-width: 240px;
+  z-index: 1;
+  display: none;
+}
+.ddm_s_social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ddm_s_social ul li {
+  margin: 0 0 10px;
+}
+.ddm_s_social ul li a {
+  text-align: center;
+  text-decoration: none;
+  color: var(--bg_btn-2);
+  transition: 300ms ease-out;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.ddm_s_social ul li a:hover {
+  text-decoration: underline;
+  color: var(--amarillo);
+}
+.ddm_s_social ul li:last-child {
+  margin: 0;
+}
+
+.c_publicaciones {
+  background: linear-gradient(180deg, #303B27 0%, #212C18 100%);
+  border-radius: 19px;
+  padding: 30px;
+  box-sizing: border-box;
+  max-width: 970px;
+  margin: 0 auto;
+}
+.c_publicaciones h3, .c_publicaciones h4 {
+  color: #FFF;
+  text-align: center;
+}
+
+.publ_legal, .publ_nuestras {
+  display: grid;
+  grid-template-columns: minmax(180px, 300px) 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.publ_legal .swiper-button-next, .publ_legal .swiper-rtl .swiper-button-prev, .publ_legal .swiper-button-prev, .publ_legal .swiper-rtl .swiper-button-next, .publ_nuestras .swiper-button-next, .publ_nuestras .swiper-rtl .swiper-button-prev, .publ_nuestras .swiper-button-prev, .publ_nuestras .swiper-rtl .swiper-button-next {
+  background-color: #FFF;
+}
+.publ_legal .swiper-button-next::after, .publ_legal .swiper-rtl .swiper-button-prev::after, .publ_legal .swiper-button-prev::after, .publ_legal .swiper-rtl .swiper-button-next::after, .publ_nuestras .swiper-button-next::after, .publ_nuestras .swiper-rtl .swiper-button-prev::after, .publ_nuestras .swiper-button-prev::after, .publ_nuestras .swiper-rtl .swiper-button-next::after {
+  color: #899E25;
+}
+.publ_legal .swiper-button-prev, .publ_legal .swiper-rtl .swiper-button-next, .publ_nuestras .swiper-button-prev, .publ_nuestras .swiper-rtl .swiper-button-next {
+  left: 30px;
+}
+
+.publ_legal {
+  margin: 0 0 30px;
+}
+
+.container_publi {
+  padding: 0 0 0 30px;
+  margin: 0 0 30px 0;
+  box-sizing: border-box;
+  border-left: 1px solid #677B57;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+.container_publi a {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.container_publi a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 145px;
+}
+.container_publi a::before {
+  content: "Descargar PDF";
+  position: absolute;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  bottom: -20px;
+  height: 20px;
+  width: 100%;
+  background-color: var(--amarillo);
+  transition: 300ms ease-out;
+}
+.container_publi a:hover::before {
+  bottom: 0;
+}
+
+.swiper_s_social {
+  padding-left: 20px;
+  box-sizing: border-box;
+  border-left: 1px solid #677B57;
+}
+
+.swiperEquipoT .info_quipo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 220px;
+}
+.swiperEquipoT .swiper-slide {
+  gap: 20px;
+}
+.swiperEquipoT .swiper-slide picture {
+  display: inline-block;
+  border-radius: 100px;
+  overflow: hidden;
+  min-width: 115px;
+  min-height: 115px;
+  max-width: 115px;
+}
+.swiperEquipoT .swiper-slide picture img {
+  min-width: 115px;
+  min-height: 115px;
+  max-width: 115px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.swiperEquipoT .swiper-slide h5 {
+  margin: 0 0 10px;
+}
+.swiperEquipoT .swiper-slide .mail {
+  font-size: 15px;
+  margin: 0 0 8px;
+}
+.swiperEquipoT .swiper-slide .desc {
+  font-size: 14px;
+}
+
+.s_publicaciones + .s_equipo_trabajo {
+  padding-bottom: 60px;
 }
 
 @media screen and (max-width: 1200px) {
   .txt_legal {
     font-size: 12px;
   }
-
   .hero_section .swiperHero .swiper-slide {
     grid-template-columns: 1fr 1fr;
   }
@@ -3440,105 +3691,81 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
   footer .cont_footer {
     gap: 20px;
   }
-
   .txt_legal {
     flex-direction: column;
   }
-
   .tl1 {
     margin-bottom: 10px;
     text-align: center;
   }
-
   .tl2 {
     padding: 10px 0;
   }
-
   .cont_noticias_dest {
     flex-direction: column;
   }
-
   .cont_b_palmicultor {
     padding: 40px 100px;
   }
-
   .hero_section .swiperHero {
     height: 100vh;
     max-height: 600px;
   }
-
   .cont_gen_noticias_d .swiper-button-next.swiper-button-disabled, .cont_gen_noticias_d .swiper-button-prev.swiper-button-disabled {
     display: flex;
   }
-
   .cont_gen_credito_finagro {
     grid-template-columns: 1fr;
   }
-
   .cont_gen_credito_finagro picture {
     display: none;
   }
-
   .cont_gen_credito_finagro .cont_cred_finagro {
     margin-left: 0px;
     justify-self: center;
   }
-
   .s_contacto .c_contacto {
     gap: 80px;
     grid-template-columns: 1fr;
   }
-
   .col_contact1 {
     position: static;
   }
-
   .s_contacto::before {
     width: 100%;
   }
-
   .s_contacto .c_contacto::before {
     display: none;
   }
-
   .aside_form {
     padding: 0;
   }
-
   .contact_form {
     max-width: 580px;
   }
-
   .c_palmicultor_dest .cols_div_palmicultor {
     grid-template-columns: 1fr;
   }
-
   .s_palmicultores {
     margin-top: -160px;
   }
-
   .s_header_palmicultor_dest .center {
     padding: 0 40px;
   }
-
   .swiperSagrilaft {
     padding-bottom: 60px;
   }
-
   .s_sistema_inf {
     padding: 60px 0 30px;
   }
-
   .cont_gen_cifras {
     gap: 20px;
   }
-
   .atajos_side .btn_atajo {
     font-size: 13px;
     padding: 6px 15px;
     right: 8px;
   }
-
   .social_side a {
     font-size: 14px;
     padding: 9px;
@@ -3548,152 +3775,117 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
   header .cont_header .navbar .btn_afiliados {
     display: none;
   }
-
   .cont_input_search {
     display: none;
   }
-
   .cont_movile .cont_input_search {
     display: flex;
     width: 100%;
   }
-
   .cont_movile {
     display: flex;
   }
-
   footer .cont_footer {
     grid-template-columns: 1fr;
   }
-
   .cont_gen_subfooter .center {
     flex-direction: column;
   }
-
   .cont_organizaciones .cont_logos {
     grid-template-columns: 1fr 1fr;
   }
-
   .s_palmitultores_dest .cont_palmicultores_dest {
     grid-template-columns: 1fr;
   }
-
   .cont_gen_noticias_d {
     grid-template-columns: 1fr;
   }
-
   .cont_gen_noticias_d .card_noticia_d {
     max-width: initial;
   }
-
   .cont_b_palmicultor {
     padding: 40px 20px;
   }
-
   .cont_quienes_s {
     grid-template-columns: 1fr;
   }
-
   .cont_servicios_g {
     padding: 20px;
   }
-
   .hero_section .swiperHero .swiper-slide {
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
   }
-
   .hero_section .swiperHero .swiper-slide {
     padding: 40px 60px;
   }
-
   .cont_organizaciones h3 {
     text-align: center;
   }
-
   .hero_section .swiperHero {
     height: 100vh;
     max-height: 660px;
   }
-
   .servicios_g .center {
     padding: 0;
   }
-
   .swiperNoticias {
     padding: 0 30px;
     box-sizing: border-box;
   }
-
   .noticias_dest .center {
     padding: 0;
   }
-
   .cont_gen_cifras_finance {
     grid-template-columns: 1fr;
   }
-
   .s_consulta_finance .cont_costos_prod .cont_pdfs_estudios {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-
   .cont_title_page h1 {
     font-size: 30px;
     text-align: center;
   }
-
   .c_ley_buttons .cont_btns_fondos {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-
   .c_ley_buttons {
     margin-bottom: 170px;
   }
-
   .s_ley_transparencia {
     padding: 20px 20px 180px;
   }
-
   .cards_sagrilaft {
     grid-template-columns: 1fr;
   }
-
   .cards_sagrilaft .card_sagr:first-child, .cards_sagrilaft .card_sagr:last-child {
     justify-self: center;
   }
-
   .cont_sistemas .swiper-slide .txt_sis_sagrilaft {
     min-height: 80px;
   }
-
   .c_instructivos {
     grid-template-columns: 1fr;
     text-align: center;
   }
-
   .cont_gen_cifras {
     grid-template-columns: 1fr;
   }
-
   .cont_gen_cifras .col_images picture {
     width: 100%;
   }
-
   .cont_gen_datos_eco .cont_datos1 {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
-
   .cont_gen_datos_eco .card_datos_eco_2 {
     grid-template-columns: 1fr;
   }
-
   .cont_gen_equipo_t {
     grid-template-columns: 1fr;
   }
-
   .div_listas_fondo aside {
     position: fixed;
     top: 108px;
@@ -3704,108 +3896,105 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
     z-index: 40;
     border: 1px solid rgba(255, 255, 255, 0.822);
   }
-
   .div_listas_fondo .dropdown_list_doc {
     display: none;
   }
-
   .banner_fp .c_info_banner_fp h3 {
     font-size: 18px;
   }
-
   .c_junta_d {
     gap: 20px;
   }
-
   .item_junta {
     border-radius: 8px;
     overflow: hidden;
   }
-
   .swiperNewPublicacion .swiper-slide {
     flex-direction: column;
   }
-
   .gran_c_publi_ultimas {
     padding: 40px;
   }
-
   .gran_c_slider_publ {
     padding: 60px 30px;
   }
-
   .gran_c_publi_ultimas .swiper-button-next, .gran_c_publi_ultimas .swiper-rtl .swiper-button-prev {
     right: -10px;
   }
-
   .gran_c_publi_ultimas .swiper-button-prev, .gran_c_publi_ultimas .swiper-rtl .swiper-button-next {
     left: -10px;
+  }
+  /* ESTILOS SOSTENIBILIDAD SOCIAL */
+  .publ_legal, .publ_nuestras {
+    grid-template-columns: 1fr;
+  }
+  .container_publi {
+    padding: 0;
+    border: 0;
+  }
+  .c_sos_social picture::before, .c_sos_social picture::after {
+    display: none;
+  }
+  .publ_legal .swiper-button-prev, .publ_legal .swiper-rtl .swiper-button-next, .publ_nuestras .swiper-button-prev, .publ_nuestras .swiper-rtl .swiper-button-next {
+    left: 10px;
+  }
+  .swiper_s_social {
+    padding: 0;
+    border: 0;
+  }
+  .c_publicaciones h4 {
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 480px) {
   footer .cont_footer .col3 .nav_footer_menu ul {
     grid-template-columns: 1fr 1fr;
   }
-
   .cont_b_palmicultor {
     flex-direction: column;
     gap: 30px;
   }
-
   .slider_s_gremiales {
     padding: 30px 0px 0;
   }
-
   .hero_section .swiperHero .swiper-slide {
     padding: 40px 20px;
   }
-
   .s_palmitultores_dest .cont_palmicultores_dest .tit_palmicultores {
     flex-direction: column;
     justify-content: centerç;
   }
-
   .s_palmitultores_dest .cont_palmicultores_dest h2 {
     text-align: center;
   }
-
   .nav_main {
     padding: 30px 20px 40px;
   }
-
   .cont_gen_cifras_finance {
     padding: 20px;
   }
-
   .cont_gen_datos_eco .card_datos_eco_2 .card_datos_eco {
     grid-template-columns: 1fr;
   }
-
   .cont_gen_datos_eco {
     padding: 20px;
   }
-
   .cont_gen_cifras .col_images picture img {
     max-height: 250px;
   }
-
   .cont_gen_cifras .col_images picture:nth-child(1) {
     transform: translateY(0px);
   }
-
   .cont_gen_equipo_t .card_equipo_t {
     grid-template-columns: 110px 2fr;
   }
-
   .banner_fp .c_info_banner_fp {
     grid-template-columns: 1fr;
     justify-items: center;
   }
-
   .banner_fp .c_info_banner_fp .btn_pri_redondo {
     justify-self: center;
   }
-
   .banner_fp .c_info_banner_fp h3 {
     text-align: center;
   }
@@ -3814,7 +4003,6 @@ footer .cont_footer .col3 .nav_footer_menu ul li a:hover {
   footer .cont_footer .col3 .nav_footer_menu ul {
     grid-template-columns: 1fr;
   }
-
   .cont_organizaciones .cont_logos {
     grid-template-columns: 1fr;
   }

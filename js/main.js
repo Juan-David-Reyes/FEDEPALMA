@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 
     if(fixFooterContacto + fixFooterSagrilaft + fixFooterEquipoTrabajo){
-        $('footer').css('margin-top', '-50px');
+        $('footer').css('margin-top', '-84px');
     }else{
         $('footer').css('margin-top', '0px');
     }
