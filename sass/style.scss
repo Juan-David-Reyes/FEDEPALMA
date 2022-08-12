@@ -3693,8 +3693,6 @@ header{
             font-weight: 700;
             background-color: var(--amarillo);
         }
-        span{
-        }
 
     }
  }
@@ -3866,7 +3864,73 @@ header{
     padding-bottom: 0;
 }
 
+/* ESTILOS INTERNA QUIENES SOMOS */
 
+.btn_amarillo{
+    background: linear-gradient(to top, #d8921e, #d8921e);
+    color: var(--txt-btn-1);
+    font-weight: 600;
+    font-family: var(--txt-btn-blanco);
+    padding: 4px 12px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    align-items: baseline;
+    width: fit-content;
+    margin: 0 auto;
+    gap:6px;
+    transition: 300ms ease-out;
+    font-size: 14px;
+    &:hover{
+        background: linear-gradient(to top, #bb7e1c, #d8921e);
+    }
+    span{
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.c_items_quienes_s{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 28px 17px -22px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+    padding: 40px;
+    box-sizing: border-box;
+
+}
+.item_quienes_s{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: stretch;
+    gap: 14px;
+    padding-left: 20px;
+    border-left: 1px solid #BEBEBE;
+    &:first-child{
+        border: 0;
+        padding: 0;
+    }
+
+    picture{
+        display: inline-block;
+        max-width: 45px;
+        img{
+            object-fit: contain;
+        }
+    }
+    h5{
+        margin: 0;
+    }
+    .desc{
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+}
 
 
 @media screen and (max-width:1200px){
@@ -4163,6 +4227,15 @@ header{
         gap: 10px;
     }
 
+    /* ESTILOS QUIENES SOMOS */
+    
+    .item_quienes_s{
+        border: 0;
+        padding: 0;
+    }
+    .c_items_quienes_s{
+        gap: 30px;
+    }
 }
 @media screen and (max-width:480px){
     footer .cont_footer .col3 .nav_footer_menu ul{
@@ -4218,7 +4291,7 @@ header{
     }
 
     /* ESTILOS GOBIERNO CORPORATIVO */
-    
+
     .doble_items{
         grid-template-columns: 1fr;
     }
